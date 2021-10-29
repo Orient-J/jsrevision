@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Button Click</title>
+		<style type="text/css">
+
+			*{
+				box-sizing:border-box;
+			}
+
+			body{
+				font-family:fantasy;
+				height:100vh;
+
+				display:flex;
+				justify-content:center;
+				align-items:center;
+
+				margin:0;
+				overflow:hidden;
+			}
+
+			.box{
+				color:#000;
+				font-size:45px;
+				border:5px solid #222;
+				padding:40px 75px;
+				margin:50px;
+
+				background:linear-gradient(135deg,rgba(0,0,129,0.5),rgba(0,0,0,0.5));
+			}
+
+			.btn button{
+				display:block;
+				background:linear-gradient(to right top,rgba(0,220,200,0.8),rgba(225,225,225,0.5));
+				border:3px solid cyan;
+				border-radius:10px;
+				padding:20px;
+				margin:10px 0;
+				cursor:pointer;
+			}
+
+			.btn button:focus{
+				outline:none;
+			}
+
+			.btn button:active{
+				transform: scale(0.98);
+			}
+
+			.btn button:nth-of-type(2){
+				background-color:orchid;
+				border-color:orchid;
+			}
+
+			.btn button:last-of-type{
+				background-color:lightgreen;
+				border-color:lightgreen;
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+		<div id="box-container" class="box" >Change Color Me</div>
+
+		<div class="btn">
+
+			<button onclick="document.getElementById('box-container').style.backgroundColor='cyan'">Change Cyan</button>
+			<button onclick="document.getElementById('box-container').style.backgroundColor='orchid'">Change Orchid</button>
+			<button onclick="document.getElementById('box-container').style.backgroundColor='darkslateblue'">Change Violet</button>
+
+		</div>
+
+		<script>
+
+		</script>
+	</body>
+</html>

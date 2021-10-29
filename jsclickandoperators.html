@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Click and operators</title>
+	</head>
+	<body>
+
+		<h1 id="text" style="color:red">Change Text</h1>
+
+		<button onclick="document.getElementById('text').style.color = 'blue'">Blue</button>
+		<button onclick="document.getElementById('text').style.color = 'cyan'">Cyan</button>
+		<input type="submit" onclick="document.getElementById('text').style.color = 'red'" value="original" />
+
+		<br/>
+
+		<script type="text/javascript">
+
+			let num = 1000,
+				num2 = 1500;
+
+			document.write("addition result is " + (num + num2) + "<br/> <br/>");
+
+			document.write("substract result is " + (num - num2) + "<br/> <br/>");
+
+			document.write("multiplication result is " + (num * num2) + "<br/> <br/>");
+
+			document.write("division result is " + (num / num2) + "<br/> <br/>");
+
+			document.write("remainder result is " + (num % num2) + "<br/> <br/>");
+
+			document.write("after increment result is " + (num++) + "<br/> <br/>");
+			document.write("after increment result is " + (num) + "<br/> <br/>");
+
+			document.write("before increment result is " + (++num) + "<br/> <br/>");
+			document.write("before increment result is " + (num) + "<br/> <br/>");
+
+			document.write("after decrement result is " + (num2--) + "<br/> <br/>");
+			document.write("after decrement result is " + (num2) + "<br/> <br/>");
+
+			document.write("before decrement result is " + (--num2) + "<br/> <br/>");
+			document.write("before decrement result is " + (num2) + "<br/> <br/>");
+
+			console.log(num);
+			
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Date and Time</title>
+	</head>
+	<body>
+
+		<h1>
+			<span id="hour">00</span> : 
+			<span id="minute">00</span> : 
+			<span id="second">00</span>
+		</h1>
+
+		<h2>
+			<span id="day">Wednesday</span> , 
+			<span id="month">10</span> <span id="getdate">10</span> , 
+			<span id="year">2000</span>/UTC Year-<span id="utcyear">2000</span>
+		</h2>
+
+		<small id="detail"></small>
+
+		<script type="text/javascript">
+
+			//Hours
+
+			let gethour = new Date().getHours();
+			console.log(gethour);
+
+			//Minutes
+
+			let getminute = new Date().getMinutes();
+			console.log(getminute);
+
+			//Seconds
+
+			let getsecond = new Date().getSeconds();
+			console.log(getsecond);
+
+			//Day 
+
+			let getday = new Date().getDay();
+			console.log(getday);
+
+			let getdate = new Date().getDate();
+			console.log(getdate);
+
+			//Month
+
+			let getmonth = new Date().getMonth();
+			console.log(getmonth);
+
+			//Year
+
+			let getyear = new Date().getFullYear();
+			console.log(getyear);
+
+			//UTC year
+
+			let getutcyear = new Date().getUTCFullYear();
+			console.log(getutcyear);
+
+			//today or date
+
+			let date = new Date();
+			console.log(date);
+
+			let today;
+
+			switch(getday){
+
+				case 0:
+					today = "Sunday";
+					break;
+
+				case 1:
+					today = "Monday";
+					break;
+
+				case 2:
+					today = "Tuesday";
+					break;
+
+				case 3:
+					today = "Wednesday";
+					break;
+
+				case 4:
+					today = "Thursday";
+					break;
+
+				case 5:
+					today = "Friday";
+					break;
+
+				default :
+					today = "Saturday";
+					break;
+			};
+
+			let thismonth;
+
+			switch(getmonth){
+
+				case 0:
+					thismonth = "January";
+					break;
+
+				case 1:
+					thismonth = "Febuary";
+					break;
+
+				case 2:
+					thismonth = "March";
+					break;
+
+				case 3:
+					thismonth = "April";
+					break;
+
+				case 4:
+					thismonth = "May";
+					break;
+
+				case 5:
+					thismonth = "June";
+					break;
+
+				case 6:
+					thismonth = "July";
+					break;
+
+				case 7:
+					thismonth = "August";
+					break;
+
+				case 8:
+					thismonth = "September";
+					break;
+
+				case 9:
+					thismonth = "October";
+					break;
+
+				case 10:
+					thismonth = "November";
+					break;
+
+				default :
+					thismonth = "December";
+					break;
+			};
+
+			date.setHours(15);
+			date.setMinutes(23);
+			date.setSeconds(54);
+			date.setDate(5);
+			date.setMonth(12);
+			date.setFullYear(1990);
+			console.log(date);
+
+
+			document.getElementById("hour").textContent = gethour < 10 ? "0" + gethour : gethour ;
+
+			document.getElementById("minute").textContent = getminute < 10 ? "0" + getminute : getminute;
+
+			document.getElementById("second").textContent = getsecond < 10 ? "0" + getsecond : getsecond;
+
+			document.getElementById("day").textContent = today;
+
+			document.getElementById("month").textContent = thismonth;
+
+			document.getElementById("getdate").textContent = getdate;
+
+			document.getElementById("year").textContent = getyear;
+
+			document.getElementById("utcyear").textContent = getutcyear;
+
+			document.getElementById("detail").textContent = date;
+
+			date = new Date("10-14-2002");
+			date = new Date('Oct/15/2002');
+			date = new Date("Oct 15 2002");
+			date = new Date("sep 15 2002 15:45:23");
+			date = new Date("sep/15/2002 15:45:23");
+			console.log(date);
+
+			document.getElementById("detail").textContent = date;
+
+		</script>
+	</body>
+</html>

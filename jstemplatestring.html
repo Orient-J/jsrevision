@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Template String</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			const name = "kyaw pyae sone",
+					age = 19,
+					job	 = "Developer";
+
+			let detail;
+
+			//Without Template String 
+
+				// detail = "<ol><li>Name : "+name+"</li><li>Age : "+age+"</li><li>Job : "+job+"</li></ol>";
+				// document.write(detail);
+
+				// detail = "<ol>"+
+				// "<li>Name : "+name+"</li>"+
+				// "<li>Age : "+age+"</li>"+
+				// "<li>Job : "+job+"</li>"+
+				// "</ol>"
+
+				// document.write(detail);
+
+				//With Template String
+
+					detail = `
+						<ol>
+							<li>Name : ${name}</li>
+							<li>Age : ${age}</li>
+							<li>Job : ${job}</li>
+						</ol>
+					`;
+
+				document.write(detail);
+		</script>
+	</body>
+</html>

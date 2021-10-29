@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Object Literals</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			//error
+			// let name = "Aung Aung","Mya Mya";
+
+			let name = "Aung Aung";
+			console.log(name);
+			console.log(typeof name);
+			console.table(name);
+			console.error(name);
+			console.warn(name);
+
+			let obj1 = {
+
+				firstname : "Kyaw",
+				middlename : "Pyae",
+				lastname : "Sone",
+				job : "developer",
+				age : 18,
+				status : "Single",
+				married : false,
+				nrc : {
+					fathername : "Kyaw Than Soe",
+					mothername : "Naw Si Nan",
+					address : {
+
+						region : "Yangon",
+						city : "Thingangyun",
+						street : "Pyi Daw Aye"
+					},
+
+					nationality : {
+
+						nation : "Myanmar",
+						races : {
+
+							rakhine : true,
+							kayin : true
+						}
+
+					},
+
+					id : "12/ThaGaKa(Naing)205657"
+				},
+
+				appearance : {
+
+					skin : "fair",
+					height : "5 ft 6 in",
+					body : {
+
+						fat : true,
+						thin : false
+					}
+				},
+
+				shool : "University of Computer Studies"
+			};
+
+			console.log(obj1);
+			console.log(typeof obj1)
+			// console.table(obj1);
+			console.error(obj1);
+			console.warn(obj1);
+
+			console.log(obj1.firstname);
+			console.log(obj1.middlename);
+			console.log(obj1.lastname);
+			console.log(obj1.job);
+			console.log(obj1.age);
+			console.log(obj1.status);
+			console.log(obj1.married);
+
+			//undefined
+			console.log(obj1.fathername);
+
+			//undefined
+			console.log(obj1.nrc.body);
+
+			console.log(obj1.nrc.fathername);
+			console.log(obj1.nrc.mothername);
+			console.log(obj1.nrc.address);
+			console.log(obj1.nrc.address.region);
+			console.log(obj1.nrc.address.city);
+			console.log(obj1.nrc.address.street);
+			console.log(obj1.nrc.nationality);
+			console.log(obj1.nrc.nationality.nation);
+
+			//undefined
+			console.log(obj1.nrc.nationality.race);
+
+			console.log(obj1.nrc.nationality.races);
+			console.log(obj1.nrc.nationality.races.kayin);
+			console.log(obj1.nrc.nationality.races.rakhine);
+
+			console.log(obj1.nrc.id);
+
+			console.log(obj1.appearance);
+			console.log(obj1.appearance.skin);
+			console.log(obj1.appearance.height);
+			console.log(obj1.appearance.body);
+			console.log(obj1.appearance.body.fat);
+			console.log(obj1.appearance.body.thin);
+
+			console.log(obj1.shool);
+
+		</script>
+	</body>
+</html>

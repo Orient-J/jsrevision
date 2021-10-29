@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Statement</title>
+	</head>
+	<body>
+
+		<script type="text/javascript">
+
+			// const x = 200,
+			// 		y = "200",
+			// 		z = 500;
+
+			// document.write(x == y ? "True" : "False");
+			// document.write(x === y ? "True" : "False");
+			// document.write(x != y ? "True" : "False");
+			// document.write(x !== y ? "True" : "False");
+			// document.write(x > z ? "True" : "False");
+			// document.write(x < z ? "True" : "False");
+			// document.write(x >= z ? "True" : "False");
+			// document.write(x <= z ? "True" : "False");
+
+			// if(x < z){
+			// 	console.log("Correct");
+			// }
+
+			// if(x > z){
+			// 	console.log("Correct");
+			// }else{
+			// 	console.log("Incorrect");
+			// }
+
+			// if(x === y){
+			// 	console.log("Correct");
+			// }else if(x == y){
+			// 	console.log("2nd Correct");
+			// }else{
+			// 	console.log("Both are incorrect");
+			// }
+
+
+			//SWITCH STATEMENT
+
+			const brand = prompt("Enter Your Phone Brand !");
+			document.write(`The Brand you enterd : ${brand} <br/>` );
+
+			switch(brand){
+
+				case "samsung":
+					document.write(`you entered ${brand} that is not my phone brand`);
+					break;
+
+				case "hawei":
+					document.write(`you entered ${brand} that is also not my phone brand`);
+					break;
+
+				case "vivo":
+					document.write(`${brand} is not my phone brand`);
+					break;
+
+				case "mi":
+					document.write(`I hate ${brand} brand`);
+					break;
+
+				case "iphone":
+					document.write(`${brand} brand is too expensive for me to buy`)
+
+				default :
+					document.write(`My phone brand is oppo`);
+					break;
+			}
+
+		</script>
+	</body>
+</html>
